@@ -1,0 +1,1583 @@
+@charset "UTF-8";
+@import url(c:\Users\peggy\OneDrive\桌面\shopping-web\src\styles\css\bootstrap.min.css);
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+}
+
+div.Header {
+  background-color: #2e2e2e;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  -webkit-box-shadow: 1px 1px #a3a3a3;
+          box-shadow: 1px 1px #a3a3a3;
+}
+
+div.Header #homeTag {
+  font-size: 28px;
+  margin: 1rem 3rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+div.Header div.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 2rem;
+}
+
+div.Header div.nav a {
+  color: #ffffff;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+div.Header div.nav a p {
+  margin: 0 5px;
+}
+
+div.Header div.nav a .cartAmount {
+  background-color: #e91300;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.Header div.nav a.active {
+  color: #faa331;
+}
+
+div.Header div.nav a.active p {
+  color: #faa331;
+}
+
+div.Header div.nav a.link {
+  color: #ffffff;
+  position: relative;
+}
+
+div.Header div.nav a.link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: #a7ff9f;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+div.Header div.nav a.link:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+div.Header div.nav div.Header_login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.Header div.nav div.Header_login div.dropdown:hover div.dropdown-menu {
+  display: block;
+  padding: 0;
+}
+
+div.Header div.nav div.Header_login div.dropdown .btn-success {
+  background-color: #2e2e2e;
+  border: none;
+}
+
+div.Header div.nav div.Header_login div.dropdown div.dropdown-menu {
+  width: 100%;
+  padding: 0;
+}
+
+div.Header div.nav div.Header_login div.dropdown div.dropdown-menu a.dropdown-item {
+  color: #000000;
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  div.Header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  div.Header #homeTag {
+    margin: 0.5rem;
+  }
+  div.Header div.nav {
+    padding: 5px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    background-color: #5f5f5f;
+  }
+  div.Header div.nav div.Header_login div.dropdown .btn-success {
+    background-color: #5f5f5f;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.Header ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  div.Header ul a:hover {
+    border-bottom: none;
+  }
+  div.Header ul a li {
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+}
+
+div.HomePage {
+  background-color: #2e2e2e;
+}
+
+div.HomePage div.discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px 0px;
+}
+
+div.HomePage div.discount div.font h4 {
+  font-size: 80px;
+  font-weight: 1000;
+  position: absolute;
+  z-index: 3;
+  letter-spacing: 10px;
+  margin: 5rem 0 0 7rem;
+}
+
+div.HomePage div.discount div.font p {
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+  z-index: 2;
+  margin: 15rem 0 0 5rem;
+}
+
+div.HomePage div.discount img {
+  width: 1000px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+div.HomePage div.hotSale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px 0;
+}
+
+div.HomePage div.hotSale h4 {
+  margin: 0 50px;
+}
+
+div.HomePage div.hotSale hr {
+  width: 90%;
+}
+
+div.HomePage div.hotSale div.card_container div.slick-slider div.slick-list div.slick-track .slick-active,
+div.HomePage div.hotSale div.card_container div.slick-slider div.slick-list div.slick-track .slick-current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-next,
+.slick-prev {
+  cursor: pointer;
+  border: none;
+  border-radius: 5vw;
+  z-index: 2 !important;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  div.HomePage div.discount div.font h4 {
+    font-size: 3rem;
+    margin: 2rem 0 0 2rem;
+  }
+  div.HomePage div.discount div.font p {
+    font-size: 24px;
+    margin: 8rem 0 0 2rem;
+  }
+  div.HomePage div.discount img {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+div.FooterInfo {
+  background-color: aliceblue;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.FooterInfo section.up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.FooterInfo section.up p {
+  margin: 10px 20px;
+  font-size: 16px;
+  color: black;
+}
+
+div.FooterInfo section.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+div.FooterInfo section.center h3 {
+  color: black;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+div.FooterInfo section.center a {
+  margin: 0 10px;
+}
+
+div.FooterInfo section.center a:hover {
+  cursor: not-allowed;
+}
+
+div.FooterInfo section.center a svg {
+  font-size: 30px;
+}
+
+div.FooterInfo section.center a svg path {
+  color: black;
+}
+
+div.FooterInfo section.down {
+  color: black;
+  font-size: 16px;
+  margin: 10px;
+}
+
+div.one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+}
+
+div.one section.left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.one section.left img {
+  width: 70%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+div.one section.right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.one section.right div {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+div.one section.right div h1 {
+  color: white;
+  z-index: 1;
+  position: absolute;
+}
+
+div.one section.right div span {
+  width: 250px;
+  height: 20px;
+  z-index: 0;
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  background-color: #faa331;
+}
+
+div.one section.right p {
+  width: 70%;
+  font-size: 16px;
+  color: white;
+}
+
+div.Introduce00 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 100px;
+}
+
+div.Introduce00 p {
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin-right: 50px;
+}
+
+div.Introduce00 img {
+  width: 60%;
+  height: 50%;
+}
+
+div.Introduce01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px 100px 0px 100px;
+}
+
+div.Introduce01 img {
+  width: 50%;
+  height: 50%;
+}
+
+div.Introduce01 p {
+  margin-left: 4rem;
+  font-size: 16px;
+  letter-spacing: 5px;
+  width: 50%;
+}
+
+div.Introduce02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px;
+}
+
+div.Introduce02 p {
+  margin: 0 3rem;
+  font-size: 16px;
+  letter-spacing: 5px;
+  width: 50%;
+}
+
+div.Introduce02 img {
+  width: 50%;
+  height: 50%;
+}
+
+.AboutPage {
+  background-color: #2e2e2e;
+}
+
+@media screen and (max-width: 700px) {
+  div.one {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.one section.left {
+    width: 100%;
+  }
+  div.one section.left img {
+    height: 300px;
+  }
+  div.one section.right {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.one section.right div {
+    margin: 50px 0;
+  }
+  div.one section.right div h1 {
+    position: inherit;
+  }
+  div.one section.right div span {
+    width: 40vw;
+    top: 20px;
+  }
+  div.Introduce00 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  div.Introduce00 p {
+    margin: 50px 0;
+  }
+  div.Introduce00 img {
+    width: 100%;
+  }
+  div.Introduce01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.Introduce01 img {
+    width: 100%;
+  }
+  div.Introduce01 p {
+    width: 100%;
+    margin: 50px 0;
+  }
+  div.Introduce02 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  div.Introduce02 p {
+    width: 100%;
+    margin: 50px 0;
+  }
+  div.Introduce02 img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.Introduce00 p {
+    width: 80vw;
+  }
+  div.Introduce00 img {
+    width: 100vw;
+  }
+  div.Introduce01 img {
+    width: 100vw;
+  }
+  div.Introduce01 p {
+    width: 80vw;
+  }
+  div.Introduce02 p {
+    width: 80vw;
+  }
+  div.Introduce02 img {
+    width: 100vw;
+  }
+}
+
+div.ProductPage {
+  background-color: #2e2e2e;
+}
+
+div.ProductPage div.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+}
+
+div.ProductCard {
+  width: 215px;
+  height: 310px;
+  font-size: 20px;
+  border: 4px solid #727272;
+  margin: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.ProductCard:hover {
+  -webkit-transition: 5s ease-in;
+  transition: 5s ease-in;
+}
+
+div.ProductCard:hover .cardHover {
+  display: contents;
+  -webkit-transition: 5s ease-in;
+  transition: 5s ease-in;
+}
+
+div.ProductCard img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 4px 0;
+}
+
+div.ProductCard div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.ProductCard div span {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+div.ProductCard div h4.noDiscount {
+  text-decoration: line-through;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+div.ProductCard div h4.discount {
+  color: red;
+  font-size: 16px;
+}
+
+div.ProductCard div.cardHover {
+  display: none;
+  -webkit-transition: 10s ease;
+  transition: 10s ease;
+}
+
+div.ProductCard div.cardHover div.detailed {
+  width: 202px;
+  height: 298px;
+  background-color: rgba(114, 114, 114, 0.6);
+  z-index: 10;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2px;
+}
+
+div.ProductCard div.cardHover div.detailed button {
+  width: 150px;
+  height: 40px;
+  margin: 1rem;
+  font-size: 16px;
+  border-radius: 10px;
+  color: black;
+  border: none;
+}
+
+div.ProductCard div.cardHover div.detailed button:hover {
+  background-color: #727272;
+  color: white;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+div.UpButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.UpButton button {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid #ffffff7e;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+div.UpButton button:hover {
+  background-color: #383838;
+}
+
+div.QuestionPage {
+  background-color: #2e2e2e;
+}
+
+div.QuestionPage section.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+
+div.QuestionPage section.question div.background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 50px 0;
+  padding-bottom: 50px;
+  background-color: rgba(226, 226, 226, 0.911);
+}
+
+div.QuestionPage section.question div.background h3 {
+  margin-top: 25px;
+  color: #000000;
+  font-weight: 800;
+}
+
+div.QuestionPage section.question div.background hr {
+  width: 90%;
+  border: none;
+  background-color: #000000;
+  height: 2px;
+}
+
+div.QuestionPage section.question div.background div.QA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  width: 100%;
+}
+
+div.QuestionPage div.QA {
+  width: 800px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.AccordionBox {
+  margin: 10px;
+}
+
+div.AccordionBox div.accordion div.accordion-item {
+  background-color: #2e2e2e;
+  width: 60vw;
+  border: none;
+}
+
+div.AccordionBox div.accordion div.accordion-body {
+  background-color: white;
+  color: black;
+}
+
+div.carousel.slide img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  div.carousel.slide img {
+    height: 50vh;
+  }
+}
+
+div.Search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+div.Search section.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+div.Search section.left div.img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 300px;
+}
+
+div.Search section.left div.img h3 {
+  width: 100px;
+  height: 200px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  background-color: rgba(255, 255, 255, 0.733);
+  color: black;
+  font-weight: 1500px;
+  position: absolute;
+  text-align: center;
+  line-height: 100px;
+}
+
+div.Search section.left div.img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+div.Search section.left div.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+
+div.Search section.left div.button button {
+  color: white;
+  letter-spacing: 10px;
+  width: 80%;
+  height: 50px;
+  background-color: #2e2e2e;
+  border: none;
+  border-bottom: 1px solid white;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+div.Search section.left div.button button:hover {
+  font-size: 20px;
+  color: #56e4b4;
+}
+
+div.Search section.right {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.Search section.right div.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 150px;
+}
+
+div.Search section.right div.search div.searchIcon {
+  font-size: 30px;
+  margin-right: 1rem;
+}
+
+div.Search section.right div.search input[type=text] {
+  width: 80%;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-size: 18px;
+}
+
+div.Search section.right div.result {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 10px;
+}
+
+div.Search section.right div.result span.noResult {
+  margin: 100px 0;
+}
+
+@media screen and (max-width: 650px) {
+  div.Search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+  div.Search section.left {
+    width: 100%;
+  }
+  div.Search section.right {
+    width: 100%;
+  }
+}
+
+div.card {
+  background-color: #2e2e2e;
+  border-radius: 0;
+}
+
+div.card div.card-body form div {
+  margin: 10px 0;
+}
+
+div.card div.card-body form button {
+  background-color: #393939;
+  margin: 50px 0;
+}
+
+div.card div.card-body form button:hover {
+  background-color: #646464;
+}
+
+div.card div.card-body div a.forgotPassword:hover {
+  cursor: not-allowed;
+}
+
+div.Product_Info {
+  background-color: #2e2e2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.Product_Info div.iceInfo {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 50px 50px;
+}
+
+div.Product_Info div.iceInfo section.img {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.Product_Info div.iceInfo section.img div.Breadcrumb {
+  width: 100%;
+}
+
+div.Product_Info div.iceInfo section.img div.Breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+div.Product_Info div.iceInfo section.img div.Breadcrumb li a:hover {
+  color: #afffd0;
+}
+
+div.Product_Info div.iceInfo section.img div.Breadcrumb .breadcrumb-item.active {
+  color: #959595;
+}
+
+div.Product_Info div.iceInfo section.img img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+div.Product_Info div.iceInfo section.information {
+  width: 60%;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.Product_Info div.iceInfo section.information h1 {
+  font-size: 28px;
+}
+
+div.Product_Info div.iceInfo section.information h4,
+div.Product_Info div.iceInfo section.information h5 {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+div.Product_Info div.iceInfo section.information div.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 50px;
+}
+
+div.Product_Info div.iceInfo section.information div.price h3 {
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+div.Product_Info div.iceInfo section.information div.price h2 {
+  color: red;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+div.Product_Info div.iceInfo section.information div.order {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.Product_Info div.iceInfo section.information div.order select {
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  border: none;
+  margin: 0 20px;
+}
+
+div.Product_Info div.iceInfo section.information div.order select option {
+  color: black;
+}
+
+div.Product_Info div.iceInfo section.information div.order button.cart {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  border: none;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+div.Product_Info div.iceInfo section.information div.order button.cart:hover {
+  background-color: #ddefff;
+}
+
+@media screen and (max-width: 790px) {
+  div.Product_Info div.iceInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.Product_Info div.iceInfo section.img {
+    width: auto;
+  }
+  div.Product_Info div.iceInfo section.img img {
+    width: 100%;
+  }
+  div.Product_Info div.iceInfo section.information {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+
+div.Cart {
+  background-color: #2e2e2e;
+  padding: 30px 0;
+}
+
+div.Cart div.cartInfo {
+  margin: 0 50px;
+}
+
+div.Cart div.cartInfo div.title {
+  padding: 5px 0;
+  background-color: #cecece;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: ". name sales amounts subTotal .";
+  justify-items: center;
+}
+
+div.Cart div.cartInfo div.title span {
+  color: black;
+}
+
+div.Cart div.cartInfo div.title .name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+}
+
+div.Cart div.cartInfo div.title .sales {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sales;
+}
+
+div.Cart div.cartInfo div.title .amounts {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: amounts;
+}
+
+div.Cart div.cartInfo div.title .subTotal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: subTotal;
+}
+
+div.Cart div.cartInfo div.list {
+  margin: 10px 0;
+}
+
+div.Cart div.cartInfo div.list div.product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e4e4e4;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+div.Cart div.cartInfo div.list div.product img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid black;
+}
+
+div.Cart div.cartInfo div.list div.product span {
+  color: black;
+}
+
+div.Cart div.cartInfo div.list div.product span a {
+  text-decoration: none;
+  color: black;
+}
+
+div.Cart div.cartInfo div.list div.product span a:hover {
+  color: #e91300;
+  text-decoration: underline;
+}
+
+div.Cart div.cartInfo div.list div.product div.count button {
+  color: black;
+  background-color: #e4e4e4;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+div.Cart div.cartInfo div.list div.product div.count span {
+  color: black;
+}
+
+div.Cart div.cartInfo div.list div.product button {
+  width: 30px;
+  height: 30px;
+  color: black;
+  border: none;
+  background-color: black;
+}
+
+div.Cart div.cartInfo div.list div.product button:hover {
+  background-color: #575757;
+}
+
+div.Cart div.cartInfo div.emptyCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.Cart div.cartInfo div.emptyCart span {
+  font-size: 24px;
+  margin: 100px 0;
+}
+
+div.Cart hr {
+  margin: 30px 50px;
+}
+
+div.Cart div.totalAmount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 10px 50px;
+}
+
+div.Cart div.totalAmount span {
+  color: white;
+  font-size: 24px;
+  margin: 0 0 0 30px;
+}
+
+div.Cart div.end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+div.Cart div.end button {
+  color: black;
+  background-color: aliceblue;
+  border: none;
+  margin: 0 10px;
+  padding: 10px 20px;
+}
+
+div.Cart div.end button:hover {
+  background-color: #faa331;
+}
+
+div.Cart div.end button.checkout:hover {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 700px) {
+  div.Cart div.cartInfo {
+    margin: 0;
+  }
+  div.Cart div.cartInfo div.title {
+    display: none;
+  }
+  div.Cart div.cartInfo div.list {
+    width: auto;
+  }
+  div.Cart div.cartInfo div.list div.product {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'img title title price ' 'img title title price ' 'img count total delete';
+  }
+  div.Cart div.cartInfo div.list div.product img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: img;
+  }
+  div.Cart div.cartInfo div.list div.product span.title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+  }
+  div.Cart div.cartInfo div.list div.product span.price {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: price;
+  }
+  div.Cart div.cartInfo div.list div.product div.count {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: count;
+  }
+  div.Cart div.cartInfo div.list div.product span.total {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: total;
+  }
+  div.Cart div.cartInfo div.list div.product button.delete {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    grid-area: delete;
+  }
+  div.Cart hr {
+    margin: 30px 0;
+  }
+}
+
+div.MemberCentre div.context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+}
+
+div.MemberCentre div.context img {
+  width: 40%;
+  margin-right: 100px;
+}
+
+div.MemberCentre div.context div.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.MemberCentre div.context div.text p {
+  color: #000000;
+  font-size: 5vw;
+}
+
+.card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.card_container--inner {
+  width: 90%;
+  padding: 5px;
+  display: block;
+}
+
+.card_container--inner--card {
+  padding: 10px 0;
+  max-width: 308px;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: #0a9e88;
+  margin-left: 10px;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.card_container--date_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+div.ErrorPage div.error {
+  background-color: #2e2e2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+div.ErrorPage div.error img {
+  width: 100vw;
+  height: 60vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+div.ErrorPage div.error button {
+  border: none;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  margin: 30px;
+  font-weight: 800;
+}
+
+div.ErrorPage div.error button:hover {
+  background-color: #faa331;
+}
+
+div.CheckOrder div.context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+}
+
+div.CheckOrder div.context img {
+  width: 40%;
+  margin-right: 100px;
+}
+
+div.CheckOrder div.context div.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.CheckOrder div.context div.text p {
+  color: #000000;
+  font-size: 5vw;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

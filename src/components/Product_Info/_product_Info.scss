@@ -1,0 +1,128 @@
+div.Product_Info {
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div.iceInfo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 30px 50px 50px; // 上 左右 下
+
+    section.img {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      div.Breadcrumb {
+        width: 100%;
+
+        li {
+          a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            transition: all 0.1s ease-in;
+            &:hover {
+              color: rgb(175, 255, 208);
+            }
+          }
+        }
+        .breadcrumb-item.active {
+          color: rgb(149, 149, 149);
+        }
+      }
+
+      img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+    section.information {
+      width: 60%;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 28px;
+      }
+      h4,
+      h5 {
+        font-size: 16px;
+        letter-spacing: 3px;
+      }
+      div.price {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        margin-top: 50px;
+
+        h3 {
+          text-decoration: line-through;
+          font-size: 16px;
+        }
+        h2 {
+          color: rgb(255, 0, 0);
+          font-size: 24px;
+          margin-left: 20px;
+        }
+      }
+      div.order {
+        margin: 50px 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        select {
+          width: 80px;
+          height: 30px;
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          border: none;
+          margin: 0 20px;
+
+          option {
+            color: rgb(0, 0, 0);
+          }
+        }
+        button.cart {
+          width: 150px;
+          height: 30px;
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          border: none;
+          transition: all 0.1s ease-in;
+          &:hover {
+            background-color: rgb(221, 239, 255);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:790px) {
+  div.Product_Info {
+    div.iceInfo {
+      flex-direction: column;
+
+      section.img {
+        width: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+  
+      section.information {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+      }
+    }  
+  }
+}

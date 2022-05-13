@@ -1,0 +1,89 @@
+div.HomePage {
+  background-color: rgb(46, 46, 46);
+
+  div.discount {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  
+    div.font {
+      h4 {
+        font-size: 80px;
+        font-weight: 1000;
+        position: absolute;
+        z-index: 3;
+        letter-spacing: 10px;
+        margin: 5rem 0 0 7rem;
+      }
+      p {
+        font-size: 40px;
+        font-weight: 600;
+        position: absolute;
+        z-index: 2;
+        margin: 15rem 0 0 5rem;
+      }
+    }
+    img {
+      width: 1000px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  div.hotSale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+
+    h4 {
+      margin: 0 50px;
+    }
+    hr {
+      width: 90%;
+    }
+    div.card_container {
+      div.slick-slider {
+        div.slick-list {
+          div.slick-track {
+            .slick-active,
+            .slick-current {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 熱門商品自動滑動左右
+.slick-next,
+.slick-prev {
+    cursor: pointer;
+    border: none;
+    border-radius: 5vw;
+    z-index: 2 !important;  
+    margin: 0 10px;    
+}
+
+@media screen and (max-width:600px) {
+  div.HomePage {
+    div.discount {
+      div.font {
+        h4 {
+          font-size: 3rem;
+          margin: 2rem 0 0 2rem;
+        }
+        p {
+          font-size: 24px;
+          margin: 8rem 0 0 2rem;
+        }
+      }
+      img {
+        width: 100%;
+        height: 50%;
+      }
+    }
+  }
+}

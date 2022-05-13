@@ -1,0 +1,17 @@
+div.AccordionBox {
+  margin: 10px;
+
+  div.accordion {
+    div.accordion-item {
+      background-color: rgb(46, 46, 46);
+      width: 60vw;
+      border: none;
+    }
+    div.accordion-body {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+  }
+}
+
+  

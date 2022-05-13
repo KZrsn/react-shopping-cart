@@ -1,0 +1,22 @@
+div.CheckOrder {
+  div.context {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+    img {
+      width: 40%;
+      margin-right: 100px;
+    }
+    div.text {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: #000000;
+        font-size: 5vw;
+      }
+    }
+  }
+}

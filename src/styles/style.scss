@@ -1,0 +1,24 @@
+@import './css/bootstrap.min.css';
+@import '../components/Header/header';
+@import '../pages/HomePage/HomePage';
+@import '../components/Footer/FooterInfo';
+@import '../pages/AboutPage/AboutPage';
+@import '../pages/ProductPage/ProductPage';
+@import '../components/UpButton/upButton';
+@import '../pages/QuestionPage/QuestionPage';
+@import '../components/AccordionBox/AccordionBox';
+@import '../components/Carousel/iMGcarousel';
+@import '../components/Search/search';
+@import '../components/Authentication/Login/Login';
+@import '../components/Product_Info/product_Info';
+@import '../components/Cart/Cart';
+@import '../pages/MemberCentre/MemberCentre';
+@import '../components/Card/Card';
+@import '../pages/ErrorPage/ErrorPage';
+@import '../pages/CheckOrder/CheckOrder';
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}

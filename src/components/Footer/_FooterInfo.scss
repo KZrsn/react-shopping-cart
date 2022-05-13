@@ -1,0 +1,50 @@
+div.FooterInfo {
+  background-color: aliceblue;
+  height: auto;
+  display: flex;flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  section.up {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    p {
+      margin: 10px 20px;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+    }
+  }
+  section.center {
+    display: flex;
+    margin: 10px 0;
+    
+    h3 {
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      margin: 0 20px;
+    }
+
+    a {
+      margin: 0 10px;
+      &:hover {
+        cursor: not-allowed
+      }
+
+      svg {
+        font-size: 30px;
+
+        path {
+          color: black;
+        }
+      }
+    }
+  }
+  section.down {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin: 10px;
+  }
+}

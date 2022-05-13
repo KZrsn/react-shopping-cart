@@ -1,0 +1,178 @@
+div.Cart {
+  background-color: rgb(46, 46, 46);
+  padding: 30px 0;
+
+  div.cartInfo {
+    margin: 0 50px;
+
+    div.title {
+      padding: 5px 0;
+      background-color: rgb(206, 206, 206);
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: ". name sales amounts subTotal .";
+      justify-items: center;
+
+      span {
+        color: rgb(0, 0, 0);;
+      }
+      .name {
+        grid-area: name;
+      }
+      .sales {
+        grid-area: sales;
+      }
+      .amounts {
+        grid-area: amounts;
+      }
+      .subTotal {
+        grid-area: subTotal;
+      }
+    }
+
+    div.list {
+      margin: 10px 0;
+
+      div.product {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        background-color: rgb(228, 228, 228);
+        margin: 10px 0;
+        padding: 10px 0;
+
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border: 1px solid rgb(0, 0, 0);
+        }
+        span {
+          color: rgb(0, 0, 0);
+
+          a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            &:hover {
+              color: rgb(233, 19, 0);
+              text-decoration: underline;
+            }
+          }
+        }
+        div.count {
+          button {
+            color: rgb(0, 0, 0);
+            background-color: rgb(228, 228, 228);
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+          }
+          span {
+            color: rgb(0, 0, 0);
+          }
+        }
+        button {
+          width: 30px;
+          height: 30px;
+          color: rgb(0, 0, 0);
+          border: none;
+          background-color: black;
+          &:hover {
+            background-color: rgb(87, 87, 87);
+          }
+        }  
+      }
+    }
+    div.emptyCart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        font-size: 24px;
+        margin: 100px 0;
+      }  
+    }
+  }
+  hr {
+    margin: 30px 50px;
+  }
+  div.totalAmount {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 50px;
+
+    span {
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+      margin: 0 0 0 30px;
+    }
+  }
+  div.end {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+    button {
+      color: rgb(0, 0, 0);
+      background-color: aliceblue;
+      border: none;
+      margin: 0 10px;
+      padding: 10px 20px;
+      &:hover {
+        background-color: rgb(250, 163, 49);
+      }
+    }
+    button.checkout {
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:700px) {
+  div.Cart {
+    div.cartInfo {
+      margin: 0;
+
+      div.title {
+        display: none;
+      }
+      div.list {
+        width: auto;
+
+        div.product {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas: 'img title title price '
+                               'img title title price '
+                               'img count total delete';
+          
+          img {
+            grid-area: img;
+          }
+          span.title {
+            grid-area: title;
+          }
+          span.price {
+            grid-area: price;
+          }
+          div.count {
+            grid-area: count;
+          }
+          span.total {
+            grid-area: total;
+          }
+          button.delete {
+            grid-area: delete;
+          }
+        }
+      }
+    }
+    hr {
+      margin: 30px 0;
+    }
+  }
+}

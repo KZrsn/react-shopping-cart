@@ -1,0 +1,178 @@
+[
+  {
+    "name": "vanilla",
+    "image": "./images/香草.jpeg",
+    "alt": "經典香草冰淇淋",
+    "title": "經典香草冰淇淋",
+    "noDiscount": 150,
+    "discount":100,
+    "classification": ["popular","classic"],
+    "path": "/product/vanilla",
+    "amount": 1
+  },
+  {
+    "name": "chocolate",
+    "image": "./images/巧克力.jpg",
+    "alt": "經典巧克力冰淇淋",
+    "title": "經典巧克力冰淇淋",
+    "noDiscount": 150,
+    "discount":100,
+    "classification": ["popular","classic"],
+    "path": "/product/chocolate",
+    "amount": 1
+  },
+  {
+    "name": "strawberry",
+    "image": "./images/經典草莓.jpg",
+    "alt": "經典草莓冰淇淋",
+    "title": "經典草莓冰淇淋",
+    "noDiscount": 150,
+    "discount":100,
+    "classification": ["classic"],
+    "path": "/product/strawberry",
+    "amount": 1
+  },
+  {
+    "name": "almond",
+    "image": "./images/杏仁巧克力.jpeg",
+    "alt": "杏仁巧克力冰淇淋",
+    "title": "杏仁巧克力冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": [],
+    "path": "/product/almond",
+    "amount": 1
+  },
+  {
+    "name": "coffee",
+    "image": "./images/咖啡.jpg",
+    "alt": "苦甜咖啡冰淇淋",
+    "title": "苦甜咖啡冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": ["popular"],
+    "path": "/product/coffee",
+    "amount": 1
+  },
+  {
+    "name": "flower",
+    "image": "./images/濃郁花香.jpg",
+    "alt": "濃郁花香冰淇淋",
+    "title": "濃郁花香冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": [],
+    "path": "/product/flower",
+    "amount": 1
+  },
+  {
+    "name": "guava",
+    "image": "./images/紅心芭樂.jpg",
+    "alt": "紅心芭樂冰淇淋",
+    "title": "紅心芭樂冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": ["fruit"],
+    "path": "/product/guava",
+    "amount": 1
+  },  
+  {
+    "name": "mango",
+    "image": "./images/芒果.jpg",
+    "alt": "季節限定芒果冰淇淋",
+    "title": "季節限定芒果冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": ["fruit"],
+    "path": "/product/mango",
+    "amount": 1
+  },
+  {
+    "name": "milk",
+    "image": "./images/香濃小農鮮奶.jpg",
+    "alt": "香濃小農鮮奶冰淇淋",
+    "title": "香濃小農鮮奶冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": ["popular"],
+    "path": "/product/milk",
+    "amount": 1
+  },
+  {
+    "name": "mint",
+    "image": "./images/薄荷巧克力.jpg",
+    "alt": "經典薄荷巧克力冰淇淋",
+    "title": "經典薄荷巧克力冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": [],
+    "path": "/product/mint",
+    "amount": 1
+  },
+  {
+    "name": "nut",
+    "image": "./images/濃郁鮮奶堅果.jpg",
+    "alt": "濃郁鮮奶堅果冰淇淋",
+    "title": "濃郁鮮奶堅果冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": [],
+    "path": "/product/nut",
+    "amount": 1
+  }, 
+  {
+    "name": "oreo",
+    "image": "./images/oreo.jpeg",
+    "alt": "Oreo巧克力脆片冰淇淋",
+    "title": "Oreo巧克力脆片冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": ["popular"],
+    "path": "/product/oreo",
+    "amount": 1
+  }, 
+  {
+    "name": "peanut",
+    "image": "./images/花生巧克力豆.jpg",
+    "alt": "花生巧克力豆冰淇淋",
+    "title": "花生巧克力豆冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": [],
+    "path": "/product/peanut",
+    "amount": 1
+  },
+  {
+    "name": "raspberry",
+    "image": "./images/覆盆莓.jpg",
+    "alt": "覆盆莓冰淇淋",
+    "title": "覆盆莓冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": ["popular","fruit"],
+    "path": "/product/raspberry",
+    "amount": 1
+  },
+  {
+    "name": "matcha",
+    "image": "./images/抹茶.jpg",
+    "alt": "日式抹茶冰淇淋",
+    "title": "日式抹茶冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": [],
+    "path": "/product/matcha",
+    "amount": 1
+  },
+  {
+    "name": "tea",
+    "image": "./images/焙茶南瓜子.jpg",
+    "alt": "焙茶南瓜子冰淇淋",
+    "title": "焙茶南瓜子冰淇淋",
+    "noDiscount": 200,
+    "discount":150,
+    "classification": [],
+    "path": "/product/tea",
+    "amount": 1
+  }
+]

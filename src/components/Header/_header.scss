@@ -1,0 +1,150 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+div.Header {
+  background-color: rgb(46, 46, 46);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  box-shadow: 1px 1px #a3a3a3;
+
+  #homeTag {
+    font-size: 28px;
+    margin: 1rem 3rem;
+    text-decoration: none;
+    color: #ffffff;
+
+  }
+  div.nav {
+    display: flex;
+    margin: 1rem 2rem;
+
+    a {
+      color: #ffffff;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin: 0 10px;
+
+      p {
+        margin: 0 5px;
+      }
+      .cartAmount {
+        background-color: rgb(233, 19, 0);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    a.active {
+      color: #faa331;
+
+      p {
+        color: #faa331;
+      }
+    }
+
+    a.link {
+      color: #ffffff;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        background-color: rgb(167, 255, 159);
+        transition: transform 0.3s ease-out;
+      }
+      &:hover::before {
+        transform: scaleX(1);
+      }
+    }
+    div.Header_login {
+      display: flex;
+
+      div.dropdown {
+        &:hover {
+          div.dropdown-menu{
+            display: block;
+            padding: 0;
+          }
+        }
+        .btn-success {
+          background-color: rgb(46, 46, 46);
+          border: none;
+        }
+        div.dropdown-menu{
+          width: 100%;
+          padding: 0;
+
+          a.dropdown-item {
+            color: #000000;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:900px) {
+  div.Header {
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: none;
+
+    #homeTag {
+      margin: 0.5rem;
+    }
+
+    div.nav {
+      padding: 5px;
+      justify-content: space-around;
+      width: 100%;
+      margin: 0;
+      background-color: rgb(95, 95, 95);
+
+      div.Header_login {
+        div.dropdown {
+          .btn-success {
+            background-color: rgb(95, 95, 95);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  div.Header {
+    ul {
+      flex-wrap: wrap;
+
+      a {
+        &:hover {
+          border-bottom: none;
+        }
+        li {
+          margin: 10px 0;
+          padding: 0 20px;
+        }  
+      }
+    }
+  }
+}

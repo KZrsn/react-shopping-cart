@@ -1,0 +1,110 @@
+div.Search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  section.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+
+    div.img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 300px;
+
+      h3 { // 垂直排列後長寬會交換
+        width: 100px; // 這是長
+        height: 200px; // 這是寬
+        writing-mode: vertical-lr; // 字垂直排列
+        background-color: rgba(255, 255, 255, 0.733);
+        color: rgb(0, 0, 0);
+        font-weight: 1500px;
+        position: absolute;
+        text-align: center;
+        line-height: 100px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    div.button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 20px;
+
+      button {
+        color: rgb(255, 255, 255);
+        letter-spacing: 10px;
+        width: 80%;
+        height: 50px;
+        background-color: rgb(46, 46, 46);
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        transition: all 0.3s ease-out;
+        &:hover {
+          font-size: 20px;
+          color: rgb(86, 228, 180);
+        }
+      }
+    }
+  }
+  section.right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 150px;
+
+      div.searchIcon {
+        font-size: 30px;
+        margin-right: 1rem;
+      }
+      input[type=text] {
+        width: 80%;
+        height: 50px;
+        padding: 0.5rem 1rem;
+        color: black;
+        font-size: 18px;
+      }  
+    }
+    div.result {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 0 10px;
+
+      span.noResult {
+        margin: 100px 0;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:650px) {
+  div.Search {
+    flex-direction: column;
+    margin-top: 10px;
+
+    section.left {
+      width: 100%;
+    }
+    section.right {
+      width: 100%;
+    }
+  }
+}
