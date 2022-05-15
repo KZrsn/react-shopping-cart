@@ -102,6 +102,17 @@ div.Header {
     }
   }
 }
+div.RegisterPage {
+  div.Header {
+    div.nav {
+      div.Header_login {
+        a {
+          color: #faa331
+        }
+      }      
+    }
+  }
+}
 
 @media screen and (max-width:900px) {
   div.Header {

@@ -135,6 +135,10 @@ div.Header div.nav div.Header_login div.dropdown div.dropdown-menu a.dropdown-it
   margin: 0;
 }
 
+div.RegisterPage div.Header div.nav div.Header_login a {
+  color: #faa331;
+}
+
 @media screen and (max-width: 900px) {
   div.Header {
     -webkit-box-orient: vertical;
