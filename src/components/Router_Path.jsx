@@ -29,8 +29,11 @@ import CheckOrder from "../pages/CheckOrder/CheckOrder";
 
 function Router_Path() {
   // cart的localStorage
-  const cartLocalStorage = JSON.parse(localStorage.getItem("cart"));
-
+  const cartLocalStorage = JSON.parse(
+    localStorage.getItem("cart") === "null"
+      ? "[]"
+      : localStorage.getItem("cart")
+  );
   // 購物車
   const [cart, setCart] = useState(cartLocalStorage);
 
