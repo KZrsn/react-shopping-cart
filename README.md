@@ -18,19 +18,19 @@
 
 ![image](https://github.com/KZrsn/react-shopping-cart/blob/main/homePage.png)
 
-### AboutPage
+## AboutPage
 
 ![image](https://github.com/KZrsn/react-shopping-cart/blob/main/aboutPage.png)
 
-### ProductPage
+## ProductPage
 
 ![image](https://github.com/KZrsn/react-shopping-cart/blob/main/ProductPage.png)
 
-### LoginPage
+## LoginPage
 
 ![image](https://github.com/KZrsn/react-shopping-cart/blob/main/LoginPage.png)
 
-### ShoppingCart
+## ShoppingCart
 
 ![image](https://github.com/KZrsn/react-shopping-cart/blob/main/ShoppingCart.png)
 
