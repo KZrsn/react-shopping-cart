@@ -62,9 +62,9 @@ const Login = () => {
               }
             </Button>
           </Form>
-          <div className="w-100 text-center mt-3">
+          {/* <div className="w-100 text-center mt-3">
             <Link to="/forgot-password" className="forgotPassword">忘記密碼?</Link>
-          </div>
+          </div> */}
           <div className="w-100 text-center mt-2">
             還沒有帳號?
             <Link to="/signUp">註冊</Link>

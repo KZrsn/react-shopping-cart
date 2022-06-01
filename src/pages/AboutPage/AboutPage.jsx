@@ -1,14 +1,9 @@
 import React from 'react';
-import FooterInfo from '../../components/Footer/FooterInfo';
-import Header from '../../components/Header/Header';
 import IMG from '../../images/介紹00.jpeg';
-import UpButton from '../../components/UpButton/UpButton';
 
-const AboutPage = ({cart}) => {
+const AboutPage = () => {
   return (
     <div className='AboutPage'>
-      <Header cart={cart} />
-
       {/* 以下介紹頁面 */}
       <div className='one'>
         <section className='left'>
@@ -46,9 +41,6 @@ const AboutPage = ({cart}) => {
         <p>主要使用新鮮鮮奶和少許的頂級鮮奶油調味，口感綿密滑順，比起傳統的冰淇淋擁有更低的脂肪跟卡路里，吃起來輕鬆無負擔。</p>
         <img src='https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' />
       </div>
-
-      <FooterInfo />
-      <UpButton />
     </div>
   )
 }

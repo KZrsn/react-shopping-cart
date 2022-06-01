@@ -1,8 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
 import IMGcarousel from '../../components/Carousel/IMGcarousel';
-import FooterInfo from '../../components/Footer/FooterInfo';
-import UpButton from '../../components/UpButton/UpButton';
 import SliderCard from '../../components/SliderCard';
 import IMG from '../../images/打折.jpeg';
 import data from '../../ice.json';
@@ -13,10 +10,9 @@ const hotSale = data.filter((ice) => { // 篩選資料分類中含有popular的�
   )
 });
 
-const HomePage = ({cart,addToCart}) => {
+const HomePage = ({addToCart}) => {
   return (
     <div className='HomePage'>
-      <Header cart={cart}/>
       <IMGcarousel />
       <div className='discount'>
         <div className='font'>
@@ -30,8 +26,6 @@ const HomePage = ({cart,addToCart}) => {
         <hr />
         <SliderCard data={hotSale} addToCart={addToCart} />
       </div>
-      <FooterInfo />
-      <UpButton />
     </div>
   )
 }

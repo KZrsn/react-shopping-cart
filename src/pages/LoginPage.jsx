@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import FooterInfo from '../components/Footer/FooterInfo';
-import Header from '../components/Header/Header';
 import Login from '../components/Authentication/Login/Login';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../utils/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 
-const LoginPage = ({ cart }) => {
+const LoginPage = () => {
   const history = useNavigate()
 
   const [user, setUser] = useState(null);
@@ -26,9 +24,7 @@ const LoginPage = ({ cart }) => {
 
   return (
     <div className="LoginPage">
-      <Header cart={cart} />
       <Login />
-      <FooterInfo />
     </div>
   )
 }

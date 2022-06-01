@@ -2,11 +2,9 @@ import { onAuthStateChanged } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SignUp from '../components/Authentication/SignUp';
-import FooterInfo from '../components/Footer/FooterInfo';
-import Header from '../components/Header/Header';
 import { auth } from '../utils/firebase';
 
-const RegisterPage = ({ cart }) => {
+const RegisterPage = () => {
   const history = useNavigate()
 
   const [user, setUser] = useState(null);
@@ -26,9 +24,7 @@ const RegisterPage = ({ cart }) => {
 
   return (
     <div className='RegisterPage'>
-      <Header cart={cart}/>
       <SignUp />
-      <FooterInfo />
     </div>
   )
 }

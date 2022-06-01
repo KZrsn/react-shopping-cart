@@ -65,6 +65,7 @@ const Product_Info = ({ ice, cart, setCart, img }) => {
     } else { // 假如推車沒商品
       setCart([...cart, { ...ice[0], amount: value }]);
     }
+    alert('成功加入購物車');
   }
 
   return (

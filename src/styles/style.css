@@ -230,7 +230,7 @@ div.HomePage div.hotSale {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 100px 0;
+  padding-bottom: 100px;
 }
 
 div.HomePage div.hotSale h4 {
@@ -351,7 +351,7 @@ div.one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 div.one section.left {
@@ -471,7 +471,7 @@ div.Introduce02 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px;
+  padding: 100px;
 }
 
 div.Introduce02 p {
@@ -847,7 +847,7 @@ div.Search {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 div.Search section.left {
