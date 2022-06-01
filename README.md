@@ -16,23 +16,27 @@
 
 ## HomePage
 
-![image](https://github.com/KZrsn/react-shopping-cart/blob/main/homePage.png)
+![image](https://github.com/KZrsn/react-shopping-cart/blob/main/README-homePage.png)
 
 ## AboutPage
 
-![image](https://github.com/KZrsn/react-shopping-cart/blob/main/aboutPage.png)
+![image](https://github.com/KZrsn/react-shopping-cart/blob/main/README-aboutPage.png)
 
 ## ProductPage
 
-![image](https://github.com/KZrsn/react-shopping-cart/blob/main/ProductPage.png)
+![image](https://github.com/KZrsn/react-shopping-cart/blob/main/README-ProductPage.png)
+
+## QuestionPage
+
+![image](https://github.com/KZrsn/react-shopping-cart/blob/main/README-QuestionPage.png)
 
 ## LoginPage
 
-![image](https://github.com/KZrsn/react-shopping-cart/blob/main/LoginPage.png)
+![image](https://github.com/KZrsn/react-shopping-cart/blob/main/README-LoginPage.png)
 
 ## ShoppingCart
 
-![image](https://github.com/KZrsn/react-shopping-cart/blob/main/ShoppingCart.png)
+![image](https://github.com/KZrsn/react-shopping-cart/blob/main/README-ShoppingCart.png)
 
 ## Build/Run
 
@@ -47,3 +51,11 @@ npm install
 /* Then start the React app */
 npm start
 ```
+
+## 未來目標
+
+- 新增註冊信箱確認
+- 新增找回忘記密碼功能
+- 結帳畫面新增
+- 串接第三方登入
+- 資料庫功能
