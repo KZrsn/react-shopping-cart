@@ -11,7 +11,7 @@ div.Cart {
       display: grid;
       grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
       grid-template-areas: ". name sales amounts subTotal .";
-      justify-items: center;
+      justify-items: center; // grid置中
 
       span {
         color: rgb(0, 0, 0);;

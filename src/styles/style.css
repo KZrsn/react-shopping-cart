@@ -974,13 +974,11 @@ div.Search section.right div.search input[type=text] {
 
 div.Search section.right div.result {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  justify-items: center;
   padding: 0 10px;
 }
 
@@ -994,7 +992,7 @@ div.Search section.right div.result span.noResult {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 10px;
+    padding-top: 10px;
   }
   div.Search section.left {
     width: 100%;
